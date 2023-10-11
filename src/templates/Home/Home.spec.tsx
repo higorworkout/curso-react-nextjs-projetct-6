@@ -1,6 +1,6 @@
 import { renderTheme } from '../../styles/render-theme';
 import { expect, describe, it } from 'vitest';
-import { Home } from '.';
+import { Home } from './index';
 
 describe('<Home />', () => {
   it('should render home', () => {

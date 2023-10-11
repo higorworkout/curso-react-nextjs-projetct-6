@@ -1,12 +1,14 @@
 import * as Styled from './styles';
+import { HtmlContent } from '../HtmlContent';
 
 export type FooterProps = {
-  title: string;
+  footerHtml: string;
 };
 
-export const Footer = ({ title = '' } :FooterProps) => {
+export const Footer = ({ footerHtml }) => {
   return (
     <Styled.Container>
+        <HtmlContent html={footerHtml}/>
     </Styled.Container>
   );
 };
